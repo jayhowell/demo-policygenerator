@@ -1,9 +1,11 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: web-terminal-operator
+  name: web-terminal
   namespace: openshift-operators
 spec:
-  name: web-terminal-operator
+  channel: fast
+  installPlanApproval: Automatic
+  name: web-terminal
   source: redhat-operators
   sourceNamespace: openshift-marketplace
