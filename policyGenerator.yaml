@@ -22,6 +22,9 @@ policies:
   - name: gitlab-operator
     manifests:
       - path: gitlab.yaml
+  - name: vpa-operator-installed
+    manifests:
+      - path: vpa-autoscaler.yaml
       
 
     
